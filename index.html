@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <h1><img class="logo" src="img/logo.png" alt="Logo Alura"></h1>
+            <p class="titulo">ENCRIPTADOR & DESENCRIPTADOR</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="cero">
+            <section class="uno">
+                <div class="textarea-container"> 
+                    <textarea cols="22" rows="10" id="text" class="ingresarTexto"  required placeholder="Ingrese el aqui el texto que desea encriptar, sin usar caracteres especiales "></textarea>
+                </div>
+                <div class="botones">
+                    <button type="button" class="botonEncriptar" onclick="processTextEncrypt()">Encriptar</button>
+                    <button type="button" class="botonDesencriptar" onclick="processTextDecrypt()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="dos">
+                <div class="textarea-container">
+                    <textarea cols="22" rows="10" id="salidaTexto" class="mensaje" required placeholder="Ningún mensaje fue encontrado"></textarea>
+                </div>
+                <div class="botones">
+                    <button type="button" class="copiar" onclick="copyMensaje()">Copiar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="pie">
+            <ul class="lista">
+                <li ><a href="https://github.com/djlasc/challengeonecodificador.git"><img class="item" alt="github" src="img/git.png"></a></li>
+                <li ><a href="https://www.linkedin.com/in/leon-salazar/" ><img class="item" alt="linkedin" src="img/in.png"></a></li>
+                <li ><a href="https://app.aluracursos.com/user/djlasc" ><img class="item" alt="Alura" src="img/a.png"></a></li>
+            </ul>
+            <p class="copyright"> Copyright León Salazar - 2023 </p>   
+        </div>
+        
+    </footer>
+
+    <script src="/encriptador.js"></script>
+</body>
+
+</html>
